@@ -109,3 +109,13 @@
 2020-12-28 18:40:29,488 INFO spawned: 'laravel_worker_00' with pid 10
 2020-12-28 18:40:30,490 INFO success: laravel_video_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
 2020-12-28 18:40:30,490 INFO success: laravel_worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-12-28 18:55:21,885 INFO exited: laravel_video_00 (exit status 1; not expected)
+2020-12-28 18:55:22,891 INFO spawned: 'laravel_video_00' with pid 8204
+2020-12-28 18:55:23,051 INFO exited: laravel_video_00 (exit status 1; not expected)
+2020-12-28 18:55:24,053 INFO spawned: 'laravel_video_00' with pid 8220
+2020-12-28 18:55:24,169 INFO exited: laravel_video_00 (exit status 1; not expected)
+2020-12-28 18:55:26,172 INFO spawned: 'laravel_video_00' with pid 8245
+2020-12-28 18:55:26,369 INFO exited: laravel_video_00 (exit status 1; not expected)
+2020-12-28 18:55:29,373 INFO spawned: 'laravel_video_00' with pid 8279
+2020-12-28 18:55:29,523 INFO exited: laravel_video_00 (exit status 1; not expected)
+2020-12-28 18:55:30,526 INFO gave up: laravel_video_00 entered FATAL state, too many start retries too quickly

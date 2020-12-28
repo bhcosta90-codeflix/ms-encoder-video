@@ -58,7 +58,7 @@ class VideoConverter extends Command
             $uuid = $arrayFile[0];
             $name = end($arrayFile);
 
-            $file = Storage::disk('s3')->get($file);
+            $file = Storage::cloud()->get($file);
             Storage::put($name, $file);
             $obj->log('DOWNLOAD');
 
@@ -87,7 +87,7 @@ class VideoConverter extends Command
                         $directoryFiles = Storage::allFiles(sha1($name));
                         foreach ($directoryFiles as $directoryFile) {
                             $content = Storage::get($directoryFile);
-                            Storage::disk('s3')->put("{$uuid}/{$directoryFile}", $content);
+                            Storage::cloud()->put("{$uuid}/{$directoryFile}", $content);
                         }
                         $obj->log('UPLOADED');
 
@@ -126,6 +126,9 @@ class VideoConverter extends Command
 
                 $this->error($e->getMessage());
             }
+
+            Storage::delete($name);
+
         } catch (Exception $e) {
             $obj->log('ERROR DOWNLOAD', $e->getMessage());
 
