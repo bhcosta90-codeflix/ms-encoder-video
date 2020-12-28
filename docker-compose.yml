@@ -15,7 +15,6 @@ services:
             - '.:/var/www/html'
         networks:
             - sail
-            - inte-armazenamento_codeflix_s3
             - inte-rabbitmq_codeflix_rabbitmq
     laravel.test:
         build:
@@ -83,7 +82,5 @@ services:
 networks:
     sail:
         driver: bridge
-    inte-armazenamento_codeflix_s3:
-        external: true
     inte-rabbitmq_codeflix_rabbitmq:
         external: true
