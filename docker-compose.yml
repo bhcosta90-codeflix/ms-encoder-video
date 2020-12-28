@@ -1,0 +1,89 @@
+# For more information: https://laravel.com/docs/sail
+version: '3'
+services:
+    laravel.cron:
+        build:
+            context: ./runtimes/cron
+            dockerfile: Dockerfile
+            args:
+                WWWGROUP: '${WWWGROUP}'
+        image: sail-7.4/cron
+        environment:
+            WWWUSER: '${WWWUSER}'
+            LARAVEL_SAIL: 1
+        volumes:
+            - '.:/var/www/html'
+        networks:
+            - sail
+            - inte-armazenamento_codeflix_s3
+            - inte-rabbitmq_codeflix_rabbitmq
+    laravel.test:
+        build:
+            context: ./runtimes/app
+            dockerfile: Dockerfile
+            args:
+                WWWGROUP: '${WWWGROUP}'
+        ports:
+            - "8100:80"
+        image: sail-7.4/app
+        environment:
+            WWWUSER: '${WWWUSER}'
+            LARAVEL_SAIL: 1
+        volumes:
+            - '.:/var/www/html'
+        networks:
+            - sail
+        depends_on:
+            - mysql
+            - redis
+            # - selenium
+    # selenium:
+    #     image: 'selenium/standalone-chrome'
+    #     volumes:
+    #         - '/dev/shm:/dev/shm'
+    #     networks:
+    #         - sail
+    #     depends_on:
+    #         - laravel.test
+    mysql:
+        image: 'mysql:8.0'
+        ports:
+            - '${FORWARD_DB_PORT:-3306}:3306'
+        environment:
+            MYSQL_ROOT_PASSWORD: '${DB_PASSWORD}'
+            MYSQL_DATABASE: '${DB_DATABASE}'
+            MYSQL_USER: '${DB_USERNAME}'
+            MYSQL_PASSWORD: '${DB_PASSWORD}'
+            MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
+        volumes:
+            - '.data/mysql:/var/lib/mysql'
+        networks:
+            - sail
+    redis:
+        image: 'redis:alpine'
+        ports:
+            - '${FORWARD_REDIS_PORT:-6379}:6379'
+        volumes:
+            - '.data/redis:/data'
+        networks:
+            - sail
+    # memcached:
+    #     image: 'memcached:alpine'
+    #     ports:
+    #         - '11211:11211'
+    #     networks:
+    #         - sail
+    mailhog:
+        image: 'mailhog/mailhog:latest'
+        ports:
+            - 1025:1025
+            - 8025:8025
+        networks:
+            - sail
+networks:
+    sail:
+        driver: bridge
+    inte-armazenamento_codeflix_s3:
+        external: true
+    inte-rabbitmq_codeflix_rabbitmq:
+        external: true

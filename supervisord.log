@@ -1,0 +1,111 @@
+2020-12-28 13:35:58,881 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-12-28 13:35:58,881 INFO Included extra file "/etc/supervisor/conf.d/worker.conf" during parsing
+2020-12-28 13:35:58,883 INFO supervisord started with pid 6
+2020-12-28 13:35:59,885 INFO spawned: 'laravel_worker_00' with pid 8
+2020-12-28 13:36:00,886 INFO success: laravel_worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-12-28 14:42:12,679 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-12-28 14:42:12,680 INFO Included extra file "/etc/supervisor/conf.d/worker.conf" during parsing
+2020-12-28 14:42:12,683 INFO supervisord started with pid 6
+2020-12-28 14:42:13,687 INFO spawned: 'laravel_worker_00' with pid 8
+2020-12-28 14:42:14,690 INFO success: laravel_worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-12-28 16:17:14,228 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-12-28 16:17:14,229 INFO Included extra file "/etc/supervisor/conf.d/worker.conf" during parsing
+2020-12-28 16:17:14,231 INFO supervisord started with pid 7
+2020-12-28 16:17:15,234 INFO spawned: 'laravel_worker_00' with pid 9
+2020-12-28 16:17:16,235 INFO success: laravel_worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-12-28 16:19:03,389 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-12-28 16:19:03,389 INFO Included extra file "/etc/supervisor/conf.d/worker.conf" during parsing
+2020-12-28 16:19:03,390 INFO supervisord started with pid 6
+2020-12-28 16:19:04,392 INFO spawned: 'laravel_worker_00' with pid 8
+2020-12-28 16:19:05,394 INFO success: laravel_worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-12-28 16:32:04,756 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-12-28 16:32:04,757 INFO Included extra file "/etc/supervisor/conf.d/worker.conf" during parsing
+2020-12-28 16:32:04,758 INFO supervisord started with pid 6
+2020-12-28 16:32:05,763 INFO spawned: 'laravel_worker_00' with pid 8
+2020-12-28 16:32:06,766 INFO success: laravel_worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-12-28 16:33:06,736 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-12-28 16:33:06,737 INFO Included extra file "/etc/supervisor/conf.d/worker.conf" during parsing
+2020-12-28 16:33:06,738 INFO supervisord started with pid 6
+2020-12-28 16:33:07,742 INFO spawned: 'laravel_worker_00' with pid 8
+2020-12-28 16:33:08,744 INFO success: laravel_worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-12-28 16:34:01,473 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-12-28 16:34:01,473 INFO Included extra file "/etc/supervisor/conf.d/worker.conf" during parsing
+2020-12-28 16:34:01,474 INFO supervisord started with pid 7
+2020-12-28 16:34:02,478 INFO spawned: 'laravel_worker_00' with pid 9
+2020-12-28 16:34:03,480 INFO success: laravel_worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-12-28 18:29:25,809 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-12-28 18:29:25,809 INFO Included extra file "/etc/supervisor/conf.d/worker.conf" during parsing
+2020-12-28 18:29:25,811 INFO supervisord started with pid 6
+2020-12-28 18:29:26,816 INFO spawned: 'laravel_worker_00' with pid 8
+2020-12-28 18:29:27,818 INFO success: laravel_worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-12-28 18:30:04,173 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-12-28 18:30:04,173 INFO Included extra file "/etc/supervisor/conf.d/video.conf" during parsing
+2020-12-28 18:30:04,173 INFO Included extra file "/etc/supervisor/conf.d/worker.conf" during parsing
+2020-12-28 18:30:04,174 INFO supervisord started with pid 6
+2020-12-28 18:30:05,176 INFO spawned: 'laravel_worker_00' with pid 8
+2020-12-28 18:30:06,178 INFO success: laravel_worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-12-28 18:30:41,453 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-12-28 18:30:41,453 INFO Included extra file "/etc/supervisor/conf.d/video.conf" during parsing
+2020-12-28 18:30:41,453 INFO Included extra file "/etc/supervisor/conf.d/worker.conf" during parsing
+2020-12-28 18:30:41,454 INFO supervisord started with pid 353
+2020-12-28 18:30:42,458 INFO spawned: 'laravel_worker_00' with pid 370
+2020-12-28 18:30:43,460 INFO success: laravel_worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-12-28 18:30:47,768 WARN received SIGINT indicating exit request
+2020-12-28 18:30:47,769 INFO waiting for laravel_worker_00 to die
+2020-12-28 18:30:48,770 INFO stopped: laravel_worker_00 (terminated by SIGTERM)
+2020-12-28 18:31:16,340 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-12-28 18:31:16,340 INFO Included extra file "/etc/supervisor/conf.d/video.conf" during parsing
+2020-12-28 18:31:16,340 INFO Included extra file "/etc/supervisor/conf.d/worker.conf" during parsing
+2020-12-28 18:31:16,341 INFO supervisord started with pid 7
+2020-12-28 18:31:17,345 INFO spawned: 'laravel_video_00' with pid 9
+2020-12-28 18:31:17,350 INFO spawned: 'laravel_worker_00' with pid 10
+2020-12-28 18:31:18,353 INFO success: laravel_video_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-12-28 18:31:18,353 INFO success: laravel_worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-12-28 18:36:49,738 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-12-28 18:36:49,738 INFO Included extra file "/etc/supervisor/conf.d/video.conf" during parsing
+2020-12-28 18:36:49,739 INFO Included extra file "/etc/supervisor/conf.d/worker.conf" during parsing
+2020-12-28 18:36:49,740 INFO supervisord started with pid 3112
+2020-12-28 18:36:50,717 INFO spawned: 'laravel_video_00' with pid 3123
+2020-12-28 18:36:50,722 INFO spawned: 'laravel_worker_00' with pid 3124
+2020-12-28 18:36:50,723 WARN received SIGINT indicating exit request
+2020-12-28 18:36:50,724 INFO waiting for laravel_video_00, laravel_worker_00 to die
+2020-12-28 18:36:51,721 INFO success: laravel_video_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-12-28 18:36:51,721 WARN received SIGINT indicating exit request
+2020-12-28 18:36:52,513 WARN received SIGINT indicating exit request
+2020-12-28 18:36:52,697 WARN received SIGINT indicating exit request
+2020-12-28 18:36:52,846 WARN received SIGINT indicating exit request
+2020-12-28 18:36:52,999 WARN received SIGINT indicating exit request
+2020-12-28 18:36:53,142 WARN received SIGINT indicating exit request
+2020-12-28 18:36:53,279 WARN received SIGINT indicating exit request
+2020-12-28 18:36:53,417 WARN received SIGINT indicating exit request
+2020-12-28 18:36:53,561 WARN received SIGINT indicating exit request
+2020-12-28 18:36:53,705 WARN received SIGINT indicating exit request
+2020-12-28 18:36:53,846 WARN received SIGINT indicating exit request
+2020-12-28 18:36:53,846 INFO waiting for laravel_video_00, laravel_worker_00 to die
+2020-12-28 18:36:53,982 WARN received SIGINT indicating exit request
+2020-12-28 18:36:55,958 WARN received SIGINT indicating exit request
+2020-12-28 18:36:56,960 INFO waiting for laravel_video_00, laravel_worker_00 to die
+2020-12-28 18:36:58,337 WARN received SIGINT indicating exit request
+2020-12-28 18:37:00,230 WARN received SIGINT indicating exit request
+2020-12-28 18:37:00,230 INFO waiting for laravel_video_00, laravel_worker_00 to die
+2020-12-28 18:37:00,449 WARN received SIGINT indicating exit request
+2020-12-28 18:37:00,617 WARN received SIGINT indicating exit request
+2020-12-28 18:37:00,768 WARN killing 'laravel_worker_00' (3124) with SIGKILL
+2020-12-28 18:37:00,769 WARN received SIGINT indicating exit request
+2020-12-28 18:37:01,267 INFO stopped: laravel_worker_00 (terminated by SIGKILL)
+2020-12-28 18:37:01,267 WARN received SIGINT indicating exit request
+2020-12-28 18:37:01,269 INFO stopped: laravel_video_00 (terminated by SIGTERM)
+2020-12-28 18:37:48,193 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-12-28 18:37:48,193 INFO Included extra file "/etc/supervisor/conf.d/video.conf" during parsing
+2020-12-28 18:37:48,193 INFO Included extra file "/etc/supervisor/conf.d/worker.conf" during parsing
+2020-12-28 18:37:48,194 INFO supervisord started with pid 6
+2020-12-28 18:37:49,198 INFO spawned: 'laravel_worker_00' with pid 8
+2020-12-28 18:37:50,200 INFO success: laravel_worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-12-28 18:40:28,478 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-12-28 18:40:28,478 INFO Included extra file "/etc/supervisor/conf.d/video.conf" during parsing
+2020-12-28 18:40:28,478 INFO Included extra file "/etc/supervisor/conf.d/worker.conf" during parsing
+2020-12-28 18:40:28,479 INFO supervisord started with pid 7
+2020-12-28 18:40:29,483 INFO spawned: 'laravel_video_00' with pid 9
+2020-12-28 18:40:29,488 INFO spawned: 'laravel_worker_00' with pid 10
+2020-12-28 18:40:30,490 INFO success: laravel_video_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-12-28 18:40:30,490 INFO success: laravel_worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
