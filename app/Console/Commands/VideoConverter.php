@@ -106,6 +106,8 @@ class VideoConverter extends Command
 
                         $this->error($e->getMessage());
                     }
+
+                    Storage::deleteDirectory(sha1($name));
                 } catch (Exception $e) {
                     $obj->log('ERROR CONVERTED', $e->getMessage());
 
@@ -116,6 +118,9 @@ class VideoConverter extends Command
 
                     $this->error($e->getMessage());
                 }
+
+                Storage::delete("{$name}.frag");
+
             } catch (Exception $e) {
                 $obj->log('ERROR FRAGMENTED', $e->getMessage());
 
@@ -127,7 +132,7 @@ class VideoConverter extends Command
                 $this->error($e->getMessage());
             }
 
-            Storage::delete($name);
+            Storage::delete("{$name}");
 
         } catch (Exception $e) {
             $obj->log('ERROR DOWNLOAD', $e->getMessage());

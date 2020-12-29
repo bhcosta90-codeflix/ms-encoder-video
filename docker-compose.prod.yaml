@@ -39,7 +39,6 @@ services:
       - DB_DATABASE=ms_encoder_videos
       - DB_USERNAME=catalogo_videos
       - DB_PASSWORD=5124828
-      - FILESYSTEM_DRIVER=gcs
       - GOOGLE_CLOUD_KEY_FILE=/var/www/html/storage/app/codeflix-298009-58b7e01f8396.json
       - GOOGLE_CLOUD_PROJECT_ID=codeflix-298009
       - GOOGLE_CLOUD_STORAGE_BUCKET=codemicrovideos
