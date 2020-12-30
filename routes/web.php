@@ -15,3 +15,19 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [Controller::class, 'get']);
+
+Route::get('/download', function(){
+    dispatch(new \App\Jobs\VideoDownload(request()->file));
+});
+
+Route::get('/fragment', function(){
+    dispatch(new \App\Jobs\VideoFragment(request()->file));
+});
+
+Route::get('/converter', function(){
+    dispatch(new \App\Jobs\VideoConverter(request()->file));
+});
+
+Route::get('/upload', function(){
+    dispatch(new \App\Jobs\VideoUpload(request()->file));
+});

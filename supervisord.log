@@ -119,3 +119,48 @@
 2020-12-28 18:55:29,373 INFO spawned: 'laravel_video_00' with pid 8279
 2020-12-28 18:55:29,523 INFO exited: laravel_video_00 (exit status 1; not expected)
 2020-12-28 18:55:30,526 INFO gave up: laravel_video_00 entered FATAL state, too many start retries too quickly
+2020-12-29 21:10:29,617 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-12-29 21:10:29,617 INFO Included extra file "/etc/supervisor/conf.d/video.conf" during parsing
+2020-12-29 21:10:29,617 INFO Included extra file "/etc/supervisor/conf.d/worker.conf" during parsing
+2020-12-29 21:10:29,620 INFO supervisord started with pid 6
+2020-12-29 21:10:30,624 INFO spawned: 'laravel_video_00' with pid 8
+2020-12-29 21:10:30,629 INFO spawned: 'laravel_worker_00' with pid 9
+2020-12-29 21:10:30,669 INFO exited: laravel_video_00 (exit status 255; not expected)
+2020-12-29 21:10:31,673 INFO spawned: 'laravel_video_00' with pid 16
+2020-12-29 21:10:31,674 INFO success: laravel_worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-12-29 21:10:31,696 INFO exited: laravel_video_00 (exit status 255; not expected)
+2020-12-29 21:10:34,678 INFO spawned: 'laravel_video_00' with pid 26
+2020-12-29 21:10:34,698 INFO exited: laravel_video_00 (exit status 255; not expected)
+2020-12-29 21:10:38,674 INFO spawned: 'laravel_video_00' with pid 39
+2020-12-29 21:10:38,705 INFO exited: laravel_video_00 (exit status 255; not expected)
+2020-12-29 21:10:39,692 INFO gave up: laravel_video_00 entered FATAL state, too many start retries too quickly
+2020-12-30 10:58:53,840 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-12-30 10:58:53,841 INFO Included extra file "/etc/supervisor/conf.d/video.conf" during parsing
+2020-12-30 10:58:53,841 INFO Included extra file "/etc/supervisor/conf.d/worker.conf" during parsing
+2020-12-30 10:58:53,843 INFO supervisord started with pid 6
+2020-12-30 10:58:54,847 INFO spawned: 'laravel_video_00' with pid 8
+2020-12-30 10:58:54,850 INFO spawned: 'laravel_worker_00' with pid 9
+2020-12-30 10:58:55,166 INFO exited: laravel_video_00 (exit status 1; not expected)
+2020-12-30 10:58:56,169 INFO spawned: 'laravel_video_00' with pid 34
+2020-12-30 10:58:56,169 INFO success: laravel_worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-12-30 10:58:56,337 INFO exited: laravel_video_00 (exit status 1; not expected)
+2020-12-30 10:58:59,202 INFO spawned: 'laravel_video_00' with pid 75
+2020-12-30 10:58:59,366 INFO exited: laravel_video_00 (exit status 1; not expected)
+2020-12-30 10:59:02,371 INFO spawned: 'laravel_video_00' with pid 109
+2020-12-30 10:59:02,526 INFO exited: laravel_video_00 (exit status 1; not expected)
+2020-12-30 10:59:03,527 INFO gave up: laravel_video_00 entered FATAL state, too many start retries too quickly
+2020-12-30 12:16:52,001 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-12-30 12:16:52,001 INFO Included extra file "/etc/supervisor/conf.d/video.conf" during parsing
+2020-12-30 12:16:52,001 INFO Included extra file "/etc/supervisor/conf.d/worker.conf" during parsing
+2020-12-30 12:16:52,002 INFO supervisord started with pid 6
+2020-12-30 12:16:53,007 INFO spawned: 'laravel_video_00' with pid 8
+2020-12-30 12:16:53,011 INFO spawned: 'laravel_worker_00' with pid 9
+2020-12-30 12:16:53,160 INFO exited: laravel_video_00 (exit status 1; not expected)
+2020-12-30 12:16:54,161 INFO spawned: 'laravel_video_00' with pid 34
+2020-12-30 12:16:54,161 INFO success: laravel_worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-12-30 12:16:54,276 INFO exited: laravel_video_00 (exit status 1; not expected)
+2020-12-30 12:16:56,281 INFO spawned: 'laravel_video_00' with pid 59
+2020-12-30 12:16:56,416 INFO exited: laravel_video_00 (exit status 1; not expected)
+2020-12-30 12:16:59,420 INFO spawned: 'laravel_video_00' with pid 93
+2020-12-30 12:16:59,605 INFO exited: laravel_video_00 (exit status 1; not expected)
+2020-12-30 12:17:00,606 INFO gave up: laravel_video_00 entered FATAL state, too many start retries too quickly

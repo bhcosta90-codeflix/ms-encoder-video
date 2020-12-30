@@ -12,7 +12,7 @@ ENV BENTO4_BASE_URL="http://zebulon.bok.net/Bento4/source/" \
 COPY entrypoint.sh /srv/commands.sh
 
 #Default
-RUN apk add --update --upgrade ffmpeg bash shadow git nginx -u python2 unzip gcc g++ scons autoconf g++ make $PHPIZE_DEPS && \
+RUN apk add --update --upgrade supervisor openssl-dev ffmpeg bash shadow git nginx -u python2 unzip gcc g++ scons autoconf g++ make $PHPIZE_DEPS && \
     chmod +x /srv/commands.sh && \
     rm /etc/nginx/conf.d/default.conf && \
     curl -s https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer && \
@@ -20,17 +20,6 @@ RUN apk add --update --upgrade ffmpeg bash shadow git nginx -u python2 unzip gcc
     rm /var/cache/apk/* && \
     usermod -u 1000 www-data && \
     groupmod -g  1000 www-data && \
-    pecl install -f xdebug && \
-    docker-php-ext-enable xdebug && \
-    echo "xdebug.mode=debug" >> /usr/local/etc/php/conf.d/xdebug.ini && \
-    #echo "xdebug.client_host=192.168.1.27" >> /usr/local/etc/php/conf.d/xdebug.ini && \
-    echo "xdebug.client_port=9000" >> /usr/local/etc/php/conf.d/xdebug.ini && \
-    echo "xdebug.start_with_request=1" >> /usr/local/etc/php/conf.d/xdebug.ini && \
-    echo "xdebug.discover_client_host=0" >> /usr/local/etc/php/conf.d/xdebug.ini && \
-    echo "xdebug.idekey=docker" >> /usr/local/etc/php/conf.d/xdebug.ini && \
-    echo "error_reporting=E_ALL" >> /usr/local/etc/php/conf.d/config.ini && \
-    echo "display_startup_errors=On" >> /usr/local/etc/php/conf.d/config.ini && \
-    echo "display_errors=On" >> /usr/local/etc/php/conf.d/config.ini && \
     docker-php-ext-install bcmath pcntl ctype fileinfo json tokenizer && \
     wget https://github.com/jwilder/dockerize/releases/download/$DOCKERIZE_VERSION/dockerize-alpine-linux-amd64-$DOCKERIZE_VERSION.tar.gz && \
     tar -C /usr/local/bin -xzvf dockerize-alpine-linux-amd64-$DOCKERIZE_VERSION.tar.gz && \
@@ -47,8 +36,6 @@ RUN apk add --update --upgrade ffmpeg bash shadow git nginx -u python2 unzip gcc
     cp -R ${BENTO4_PATH}/Build/Targets/x86_64-unknown-linux/Release ${BENTO4_PATH}/bin && \
     cp -R ${BENTO4_PATH}/Source/Python/utils ${BENTO4_PATH}/utils && \
     cp -a ${BENTO4_PATH}/Source/Python/wrappers/. ${BENTO4_PATH}/bin
-    #apk cache clean && \
-    #rm -rf /var/cache/apk/*
 
 COPY nginx.conf /etc/nginx/nginx.conf
 

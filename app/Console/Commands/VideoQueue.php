@@ -2,6 +2,7 @@
 
 namespace App\Console\Commands;
 
+use App\Jobs\VideoDownload;
 use Bschmitt\Amqp\Facades\Amqp;
 use Illuminate\Console\Command;
 
@@ -38,14 +39,15 @@ class VideoQueue extends Command
      */
     public function handle()
     {
-        Amqp::consume('videos', function($message, $resolver){
+        \Amqp::consume('ms-encoder/video/converter', function($message, $resolver){
             $data = json_decode($message->getBody());
-            $this->call('video:converter', [
-                '--file' => $data->video
-            ]);
+            dispatch(new VideoDownload($data->video));
             $resolver->acknowledge($message);
         }, [
-            'persistent' => true
+            'persistent' => true,
+            'exchange' => 'amq.topic',
+            'exchange_type' => 'topic',
+            'routing' => 'models.video.converter'
         ]);
 
         return 0;
