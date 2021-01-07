@@ -1,86 +1,42 @@
 # For more information: https://laravel.com/docs/sail
 version: '3'
 services:
-    laravel.cron:
+    app:
+        container_name: 'ms_encoder_app'
         build:
-            context: ./runtimes/cron
+            context: .
             dockerfile: Dockerfile
-            args:
-                WWWGROUP: '${WWWGROUP}'
-        image: sail-7.4/cron
-        environment:
-            WWWUSER: '${WWWUSER}'
-            LARAVEL_SAIL: 1
         volumes:
             - '.:/var/www/html'
         networks:
-            - sail
             - inte-rabbitmq_codeflix_rabbitmq
-    laravel.test:
-        build:
-            context: ./runtimes/app
-            dockerfile: Dockerfile
-            args:
-                WWWGROUP: '${WWWGROUP}'
-        ports:
-            - "8100:80"
-        image: sail-7.4/app
-        environment:
-            WWWUSER: '${WWWUSER}'
-            LARAVEL_SAIL: 1
-        volumes:
-            - '.:/var/www/html'
-        networks:
-            - sail
-        depends_on:
-            - mysql
-            - redis
-            # - selenium
-    # selenium:
-    #     image: 'selenium/standalone-chrome'
-    #     volumes:
-    #         - '/dev/shm:/dev/shm'
-    #     networks:
-    #         - sail
-    #     depends_on:
-    #         - laravel.test
+            - app
     mysql:
         image: 'mysql:8.0'
         ports:
-            - '${FORWARD_DB_PORT:-3306}:3306'
+            - '33306:3306'
         environment:
-            MYSQL_ROOT_PASSWORD: '${DB_PASSWORD}'
-            MYSQL_DATABASE: '${DB_DATABASE}'
-            MYSQL_USER: '${DB_USERNAME}'
-            MYSQL_PASSWORD: '${DB_PASSWORD}'
+            MYSQL_ROOT_PASSWORD: 'root'
+            MYSQL_DATABASE: 'ms_encoder_video'
+            MYSQL_USER: 'root'
+            MYSQL_PASSWORD: 'root'
             MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
+        command: [
+                "--sql-mode=TRADITIONAL",
+                "--character-set-server=latin1",
+                "--collation-server=latin1_swedish_ci",
+                "--default-authentication-plugin=mysql_native_password"
+        ]
         volumes:
-            - '.data/mysql:/var/lib/mysql'
+            - 'ms_encoder_mysql:/var/lib/mysql'
         networks:
-            - sail
-    redis:
-        image: 'redis:alpine'
-        ports:
-            - '${FORWARD_REDIS_PORT:-6379}:6379'
-        volumes:
-            - '.data/redis:/data'
-        networks:
-            - sail
-    # memcached:
-    #     image: 'memcached:alpine'
-    #     ports:
-    #         - '11211:11211'
-    #     networks:
-    #         - sail
-    mailhog:
-        image: 'mailhog/mailhog:latest'
-        ports:
-            - 1025:1025
-            - 8025:8025
-        networks:
-            - sail
+            - app
 networks:
-    sail:
-        driver: bridge
+    app:
+        driver: 'bridge'
     inte-rabbitmq_codeflix_rabbitmq:
         external: true
+
+volumes:
+    ms_encoder_mysql:
+        driver: local

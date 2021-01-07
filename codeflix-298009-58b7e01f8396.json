@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "codeflix-298009",
+  "private_key_id": "58b7e01f83964d5f4e6063c3d61a49ad281ec87b",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC3owhCl7uZbEGV\nmGw9qwmArGAxATPhchUXtjk+tIM+VVBJQXJ0/+7Z3Fsd2Ld8g1lhLfKloZWXzHbs\naa9oxHlkBbhJP82LR37jCk5Kka0Mc0Q5g7xvpjm40daFL/ntZjXxcL4sB7Nec5b0\n6m27B8NK6kv/VJBMo7Xe6bO2VaRQb122xcj0X1mvpkS4qPouqSPElj3WcTIMzGQH\nCn2eE0ya1vPA9YG705LDsgc2aDN13FBPo60xWV35bfWDiwX4eJsRLOgUgAQYvucx\n9a2xX1tg7caql3/gedZ0rc9ChTOkUVfDiT2ZUMyRWzyQJM3LHB4PMxBNq5Fn5BCs\naknnGUktAgMBAAECggEAHVdr4PQMkhGVkxkFJn9XJ9ujDQFzsDCBxUWk9Otz0vhf\nuSy/ZIlmOSI33td7TeZQ2DG2xRdB5zzQvaqPT+6gtMYjMXUD2x7D2/QQGWMYYtZi\nDsyJRc+qBmlk3OgTB4ce1GKeyDs8wjk25BA3EzzEzAoOtY/l9JDt5N2zjM03UXCM\nb89CnvLo0dTAR9gpbeFIbvyoWDfYNVTuraRuqYTwRMKnV/KhtyV2AzOXUviIlk56\na36jc+QefT9rgPDDAJo3/OQjZaf/jiERdaJqeyrZcb3Yx+5mMZ5D/4oDDx27GYgJ\nP7mGbQblWfZTV3EQea3syxFYiaS/qnVR/MAmyR/BQwKBgQDpT+LmtYZr67Okem6V\nrd6OMt7oaSu8NSHF82erPto4yML5jgU6OI/ArSVVUTP4xjGhIUTZ87MfZMfQWTcP\n2Ja2d6G6luP/PMzsFxI5ithWVM+QQiRH7dDWaELpWTJuiyyZWQ81WEXs8uJb/cr7\nyzmnNHxdQHXloLm0VMJ9K6zO+wKBgQDJfoWhluflbEpKkK2U5UCbsunSToYy1xzr\nrtAHlSz7L2ISXNeFv7HBnmzaBimX3vufscX1GYCWF9LBX/V5VimImhQTWWrytDP/\nqNUmMr407/jYIeQHEKhygNwfl3qW3KhWOjLjC0NDou3yrjw9uH0bPP0LQfwBJJdZ\nIDfBv6Cv9wKBgDtriBs/8gs8TVU/hTiDvqGynQjN+ECHu6FBm46GhGdf4iBSpkws\nqZflwRNYigb62xrxcSqdIWqGbUlH33kerUutbjgqQ8j2gC5EtfSHww9BrFdOMRVM\noRpqFVh+yhRTR7mKcBAi+jQdq77IBVFZccZ+3ImXaC9iXslpqNreK7XPAoGBAID4\nNtiDGtNCSRsJF9HiG0SNdBRkpokMHzrLneP8m9n7Li7KtjipxkFEAjBbGWxYEX7Z\n7vc+54sqnH+hyCFuAQ+qb4cjCM1ogo/1pNjaSdzgbMsKhkXvZ6JC0KJ39sNxYV4v\nyjqBDwDP3LYkx/JJj+pLUzxNc9vXa/hkIswkt9lpAoGAfL7as9XkSLpiWjAtaS2u\n1LWNRdBTjmxZYeK5xSdXNHf7WCR0kZTly63feOlBugWXuaIUOkMkiJc6/rEbQj+N\nPxfNF0bWY3JydPCemFC8mKbILG9ECkr9Xu3Y7B1j5mLUnyGYlIzVf8Kx1z+6PqJb\nrj+Sny+Se65LDuPA/29yxi8=\n-----END PRIVATE KEY-----\n",
+  "client_email": "laravel-videos-codeflix@codeflix-298009.iam.gserviceaccount.com",
+  "client_id": "112827356374590920198",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/laravel-videos-codeflix%40codeflix-298009.iam.gserviceaccount.com"
+}
