@@ -11,7 +11,7 @@ class Google
      */
     public static function getStorage(): StorageClient{
         return new StorageClient([
-            'keyFile' => json_decode(file_get_contents(BASE_PATH . '/codeflix-298009-58b7e01f8396.json'), true),
+            'keyFile' => json_decode(file_get_contents(BASE_PATH . '/storage/google.cloud.json'), true),
         ]);
     }
 }
